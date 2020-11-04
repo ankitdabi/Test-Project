@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/aboutTheFilmTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:fontFamily="@font/proximanova_semibold_webfont"
+        android:text="About the Film"
+        android:textColor="@color/text1"/>
+
+    <TextView
+        android:id="@+id/aboutFilmTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutTheFilmTextViewLabel"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:text="The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it."
+        android:fontFamily="@font/proximanova_regular_webfont"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/releasedTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutFilmTextView"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/proximanova_semibold_webfont"
+        android:text="Released:"
+        android:textColor="@color/text1"/>
+
+    <TextView
+        android:id="@+id/releasedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/releasedTextViewLabel"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:text="2020-10-23"
+        android:layout_toRightOf="@+id/releasedTextViewLabel" />
+
+    <TextView
+        android:id="@+id/budgetTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/releasedTextViewLabel"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/proximanova_semibold_webfont"
+        android:text="Budget:"
+        android:textColor="@color/text1"/>
+
+    <TextView
+        android:id="@+id/budgetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/budgetTextViewLabel"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:text="$ 0"
+        android:layout_toRightOf="@+id/budgetTextViewLabel"
+        android:fontFamily="@font/proximanova_regular_webfont" />
+
+    <TextView
+        android:id="@+id/revenueTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/budgetTextViewLabel"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/proximanova_semibold_webfont"
+        android:text="Revenue:"
+        android:textColor="@color/text1"/>
+
+    <TextView
+        android:id="@+id/revenueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/revenueTextViewLabel"
+        android:layout_marginStart="5dp"
+        android:textSize="16sp"
+        android:text="$ 0"
+        android:layout_toEndOf="@+id/revenueTextViewLabel"
+        android:fontFamily="@font/proximanova_regular_webfont" />
+
+</RelativeLayout>

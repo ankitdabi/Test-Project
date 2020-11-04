@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.testapplication.OnRecyclerViewItemClickListener
 import com.example.testapplication.R
-import com.example.testapplication.activity.AboutMovieActivity
+import com.example.testapplication.fragment.AboutMovieActivity
 import com.example.testapplication.bean.MovieResults
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.horizontal_cardview_movies.view.*

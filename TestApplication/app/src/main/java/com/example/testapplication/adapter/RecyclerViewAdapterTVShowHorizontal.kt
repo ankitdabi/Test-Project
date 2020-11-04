@@ -7,10 +7,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.testapplication.OnRecyclerViewItemClickListener
 import com.example.testapplication.R
 import com.example.testapplication.bean.SeriesResults
+import com.example.testapplication.fragment.AboutSeriesFragment
 import com.squareup.picasso.Picasso
 import java.util.*
 
@@ -39,11 +41,15 @@ class RecyclerViewAdapterTVShowHorizontal(tvShows: ArrayList<SeriesResults>?, co
             val rating = java.lang.Double.toString(mTVShows[position].vote_average).substring(0, 3)
             holder.rating.text = rating
             holder.cv.setOnClickListener { v: View? ->
-                if (listener != null) listener!!.onRecyclerViewItemClicked(
-                    verticalPosition,
-                    position,
-                    holder.tvShowThumbnailImage
-                )
+                if (mTVShows.get(position) != null) {
+                    val activity = mContext as FragmentActivity
+                    val fm = activity.supportFragmentManager
+                    val alertDialog = AboutSeriesFragment(
+                        mTVShows.get(position),
+                        mTVShows.get(position).id
+                    )
+                    alertDialog.show(fm, "Simple dialog")
+                }
             }
         }
     }

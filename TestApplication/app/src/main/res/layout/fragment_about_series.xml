@@ -32,20 +32,20 @@
                     android:background="@color/white_color"
                     android:scaleType="fitXY" />
 
-               <!-- <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/pager"
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:background="@android:color/white"
-                    app:layout_scrollFlags="scroll" />
+                <!-- <androidx.viewpager.widget.ViewPager
+                     android:id="@+id/pager"
+                     android:layout_width="match_parent"
+                     android:layout_height="250dp"
+                     android:background="@android:color/white"
+                     app:layout_scrollFlags="scroll" />
 
-                <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginBottom="8dp"
-                    android:orientation="horizontal" />-->
+                 <RadioGroup
+                     android:id="@+id/radioGroup"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="bottom|center"
+                     android:layout_marginBottom="8dp"
+                     android:orientation="horizontal" />-->
             </FrameLayout>
 
             <RelativeLayout

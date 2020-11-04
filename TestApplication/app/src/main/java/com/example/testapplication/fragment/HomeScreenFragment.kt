@@ -28,11 +28,6 @@ class HomeScreenFragment : Fragment() {
         val viewPager = view.findViewById<View>(R.id.view_pager) as ViewPager
         setupViewPager(viewPager)
 
-        /*getActivity().setTitle("Manage Tasks");*/
-        // Set Tabs inside Toolbar
-
-        /*getActivity().setTitle("Manage Tasks");*/
-        // Set Tabs inside Toolbar
         val tabs = view.findViewById<View>(R.id.tab_layout) as TabLayout
         tabs.setupWithViewPager(viewPager)
 
