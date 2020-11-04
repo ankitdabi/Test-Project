@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nav_header">
+
+    <!-- <ImageView
+         android:id="@+id/nav_img"
+         android:layout_width="160dp"
+         android:layout_height="100dp"
+         android:layout_marginTop="25dp"
+         android:layout_marginLeft="20sp"/>
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <TextView
+             android:id="@+id/nav_firstName"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textStyle="bold"
+             android:textSize="16sp"
+             android:layout_marginLeft="20sp"
+             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+         <TextView
+             android:id="@+id/nav_lastName"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textStyle="bold"
+             android:textSize="16sp"
+             android:layout_marginLeft="@dimen/margin_4"
+             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="horizontal">
+
+         <TextView
+             android:id="@+id/emp_id_text"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20sp"
+             android:text="Emp ID :"
+             android:visibility="gone"
+             />
+         <TextView
+             android:id="@+id/nav_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/margin_4"
+             />
+
+     </LinearLayout>-->
+
+
+</LinearLayout>

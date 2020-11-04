@@ -3,4 +3,24 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="black_color">#000000</color>
+
+    <color name="btn_color">#424242</color>
+    <color name="deactivate">#BDBDBD</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="less_black">#212121</color>
+    <color name="red_color"> #F44336 </color>
+    <color name="close_task_status_color">#616161 </color>
+    <color name="assigned_status_color"> #BE242E </color>
+
+    <color name="card_backround_color">#EDEDEF</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="text1">#263238</color>
+    <color name="text2">#455a64</color>
+    <color name="subtext1">#78909c</color>
+    <color name="subtext2">#b0bec5</color>
+
 </resources>
