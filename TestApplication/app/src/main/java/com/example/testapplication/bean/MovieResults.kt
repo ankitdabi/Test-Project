@@ -2,7 +2,8 @@ package com.example.testapplication.bean
 
 import com.google.gson.annotations.SerializedName
 
-class MovieResults (
+data class MovieResults (
+
     @SerializedName("popularity") val popularity : Double,
     @SerializedName("vote_count") val vote_count : Int,
     @SerializedName("video") val video : Boolean,
@@ -18,6 +19,7 @@ class MovieResults (
     @SerializedName("overview") val overview : String,
     @SerializedName("release_date") val release_date : String
 )
+
 
 
 

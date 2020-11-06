@@ -22,7 +22,7 @@ import retrofit2.Response
 import java.util.*
 
 
-class MoviesFragment : Fragment() {
+class MoviesFragment : androidx.fragment.app.Fragment() {
 
     private var recyclerView: RecyclerView? = null
     private var allMovies: Array<MovieBean?> ?= null

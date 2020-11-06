@@ -8,15 +8,19 @@ import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.testapplication.OnRecyclerViewItemClickListener
 import com.example.testapplication.R
-import com.example.testapplication.fragment.AboutMovieActivity
+import com.example.testapplication.bean.Movie
 import com.example.testapplication.bean.MovieResults
+import com.example.testapplication.database.SQLite
+import com.example.testapplication.fragment.AboutMovieActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.horizontal_cardview_movies.view.*
 import java.util.*
 
 class RecyclerViewAdapter(
     private val mMovies: ArrayList<MovieResults>?,
-    internal var mContext: Context
+    internal var mContext: Context,
+    private var favoriteDbHelper: SQLite? = null,
+    private var favorite: Movie? = null
 ) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
     private var listener: OnRecyclerViewItemClickListener? = null
     private var verticalPosition: Int = 0
@@ -48,11 +52,10 @@ class RecyclerViewAdapter(
                 if (listener != null)
                     listener!!.onRecyclerViewItemClicked(
                         verticalPosition,
-                        position,
+                        position,   
                         holder.itemView.thumbnailIV
                     )
             }
-
             holder.itemView.rootCV.setOnClickListener(View.OnClickListener {
                 if (mMovies.get(position) != null) {
                     val activity = mContext as FragmentActivity
@@ -63,6 +66,10 @@ class RecyclerViewAdapter(
                     )
                     alertDialog.show(fm, "Simple dialog")
                 }
+            })
+
+            holder.itemView.favId.setOnClickListener(View.OnClickListener {
+
             })
         }
     }
